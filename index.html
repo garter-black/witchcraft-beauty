@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THE OBSIDIAN ATELIER</title>
+<meta name="description" content="A small standing collection. Materials disclosed, makers vetted, shown by enquiry. 18+, separately operated.">
+<meta name="rating" content="adult">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://witchcraft.beauty/">
+<meta property="og:title" content="THE OBSIDIAN ATELIER">
+<meta property="og:description" content="Discretion is the material.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070706; --ink:#EDE9E0; --dim:#8A857B; --faint:#4A463F; --rule:#1C1A17;
+  --accent:#6E5B48;
+  --d:"Cormorant",Georgia,serif;
+  --s:"Jost","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --e:cubic-bezier(.16,1,.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--s);font-weight:300;
+     line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.lab{font-size:10px;letter-spacing:.42em;text-transform:uppercase;color:var(--dim)}
+.rule{border-top:1px solid var(--rule)}
+.air{height:22vh}
+
+nav{border-bottom:1px solid var(--rule)}
+nav .wrap{display:flex;gap:30px;align-items:center;height:62px;flex-wrap:wrap}
+nav a{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--dim);
+      position:relative;transition:color .5s var(--e)}
+nav a:hover{color:var(--ink)}
+nav .brand{color:var(--ink);margin-right:auto;letter-spacing:.36em}
+
+header{padding:19vh 0 14vh}
+h1{font-family:var(--d);font-weight:300;font-size:clamp(52px,10vw,132px);
+   line-height:.94;letter-spacing:-.015em}
+h1 .b{display:block}
+.mark{width:38px;height:1px;background:var(--accent);margin:46px 0 34px}
+.promise{font-family:var(--d);font-style:italic;font-size:clamp(20px,2.8vw,34px);
+         line-height:1.3;color:#BDB6A9;max-width:26ch}
+.lede{max-width:50ch;margin-top:30px;color:var(--dim);font-size:15.5px}
+.cta{display:inline-block;margin-top:48px;font-size:10px;letter-spacing:.34em;
+     text-transform:uppercase;border-bottom:1px solid var(--faint);padding-bottom:6px;
+     transition:border-color .5s var(--e),color .5s var(--e)}
+.cta:hover{border-color:var(--accent);color:#C3B49F}
+
+section{padding:12vh 0}
+.head{display:grid;grid-template-columns:190px 1fr;gap:40px;align-items:start;margin-bottom:52px}
+.head h2{font-family:var(--d);font-weight:300;font-size:clamp(26px,4.2vw,48px);
+         line-height:1.1;max-width:22ch}
+@media(max-width:760px){.head{grid-template-columns:1fr;gap:14px}}
+
+.row{display:grid;grid-template-columns:52px 1fr 210px;gap:26px;padding:28px 0;
+     border-top:1px solid var(--rule);align-items:baseline}
+.row:last-child{border-bottom:1px solid var(--rule)}
+.row .n{font-size:10px;letter-spacing:.2em;color:var(--faint)}
+.row h3{font-size:15px;font-weight:400;letter-spacing:.16em;text-transform:uppercase}
+.row p{color:var(--dim);font-size:14px;margin-top:9px;max-width:56ch}
+.row .m{font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:#5C5750;text-align:right}
+.row:hover .m{color:var(--accent)}
+@media(max-width:860px){.row{grid-template-columns:38px 1fr}.row .m{grid-column:2;text-align:left;margin-top:10px}}
+
+/* the one bruise. this hairline stops short and is not a mistake. */
+.row.short{border-top:none;position:relative}
+.row.short::before{content:"";position:absolute;top:0;left:0;right:132px;border-top:1px solid var(--rule)}
+
+figure{padding:13vh 0 10vh;margin:0}
+figure svg{display:block;width:min(420px,60vw);margin-left:11%;stroke:#211E1A;fill:none;stroke-width:1}
+figcaption{font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--faint);margin-top:28px}
+
+.pull{font-family:var(--d);font-size:clamp(26px,5vw,62px);line-height:1.14;max-width:19ch;font-weight:300}
+
+footer{padding:12vh 0 9vh;border-top:1px solid var(--rule)}
+.fl{display:flex;gap:32px;flex-wrap:wrap;align-items:baseline}
+.fl a,.fl span{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--dim)}
+.fl a:hover{color:var(--ink)}
+.legal{margin-top:48px;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#3A3730;line-height:2.2}
+
+/* THE GATE */
+#gate{position:fixed;inset:0;background:var(--bg);z-index:99;display:flex;
+      align-items:center;justify-content:center}
+#gate .in{max-width:500px;padding:30px}
+#gate h2{font-family:var(--d);font-weight:300;font-size:clamp(28px,5vw,50px);
+         margin:20px 0 16px;line-height:1.1}
+#gate p{color:var(--dim);font-size:14px;max-width:42ch}
+#gate .g{display:inline-block;margin:38px 32px 0 0;font-size:10px;letter-spacing:.34em;
+         text-transform:uppercase;border-bottom:1px solid var(--faint);padding-bottom:6px;
+         cursor:pointer;background:none;border-top:0;border-left:0;border-right:0;
+         color:var(--ink);font-family:var(--s)}
+#gate .g:hover{border-color:var(--accent);color:#C3B49F}
+#gate .g:focus-visible{outline:1px solid var(--accent);outline-offset:6px}
+
+/* motion title: the display face settles, once. */
+.kin span{display:inline-block;opacity:0;transform:translateY(.24em);
+          animation:rise .95s var(--e) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+  .kin span{animation:none;opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+.fx{opacity:0;transform:translateY(20px);transition:opacity 1.2s var(--e),transform 1.2s var(--e)}
+.fx.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.fx{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="/">THE OBSIDIAN ATELIER</a>
+  <a href="#collection">The collection</a>
+  <a href="#making">The making</a>
+  <a href="#discretion">Discretion</a>
+</div></nav>
+
+<div id="gate"><div class="in">
+  <p class="lab">EIGHTEEN AND OVER</p>
+  <h2>This atelier serves adults.</h2>
+  <p>The collection is shown to persons eighteen years and older. Entry is a declaration of age.</p>
+  <button class="g" id="enter">I am 18 or older</button>
+  <button class="g" id="leave">Leave</button>
+</div></div>
+
+<header class="wrap">
+  <p class="lab fx">Separately operated &nbsp;&middot;&nbsp; Sydney</p>
+  <h1 class="kin" style="margin-top:30px">
+    <span class="b" style="animation-delay:.05s">The Obsidian</span>
+    <span class="b" style="animation-delay:.22s">Atelier</span>
+  </h1>
+  <div class="mark fx"></div>
+  <p class="promise fx">Discretion is the material.</p>
+  <p class="lede fx">A small standing collection, held rather than catalogued. Few pieces,
+  chosen the way the house chooses everything: quality first, novelty never. Packaging
+  that says nothing. Records that say less.</p>
+  <a class="cta fx" href="#collection">The collection &rarr;</a>
+</header>
+
+<div class="air"></div>
+
+<figure class="fx">
+  <svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M110 330 L450 330"/>
+    <path d="M246 330 C232 210 250 150 280 96 C310 150 328 210 314 330"/>
+    <path d="M314 330 L392 330" stroke-dasharray="1 7"/>
+  </svg>
+  <figcaption>Plate 01 &nbsp;&middot;&nbsp; The object, unnamed</figcaption>
+</figure>
+
+<section id="collection" class="wrap">
+  <div class="head fx">
+    <p class="lab">The collection</p>
+    <h2>An edit, not a catalogue.</h2>
+  </div>
+  <div class="row fx">
+    <span class="n">01</span>
+    <div><h3>The standing pieces</h3>
+    <p>A short list, kept short on purpose. Materials disclosed in full, makers named on
+    request, provenance available for every piece. Shown to entrants only.</p></div>
+    <span class="m">By enquiry &rarr;</span>
+  </div>
+  
+</section>
+
+<section id="making" class="wrap rule">
+  <div class="head fx">
+    <p class="lab">The making</p>
+    <h2>Held to the same standard as everything else the house puts its name to.</h2>
+  </div>
+  <div class="row fx">
+    <span class="n">01</span>
+    <div><h3>Materials</h3>
+    <p>Named, graded and disclosed before purchase, never after. If a material cannot be
+    stated plainly it does not enter the collection.</p></div>
+    <span class="m">Disclosed &rarr;</span>
+  </div>
+  <div class="row fx short">
+    <span class="n">02</span>
+    <div><h3>Makers</h3>
+    <p>Small workshops, vetted in person, paid properly. The list is short because the
+    standard is not negotiable.</p></div>
+    <span class="m">Vetted &rarr;</span>
+  </div>
+</section>
+
+<section id="discretion" class="wrap rule">
+  <div class="head fx">
+    <p class="lab">Discretion</p>
+    <h2>Practised, not promised.</h2>
+  </div>
+  <div class="row fx">
+    <span class="n">01</span>
+    <div><h3>Packaging</h3>
+    <p>Plain outer, neutral sender, no mark anywhere a courier can read it.</p></div>
+    <span class="m">Plain &rarr;</span>
+  </div>
+  <div class="row fx">
+    <span class="n">02</span>
+    <div><h3>Records</h3>
+    <p>Statements carry a neutral descriptor. Data kept to the minimum the law allows,
+    and deleted on request.</p></div>
+    <span class="m">Minimal &rarr;</span>
+  </div>
+</section>
+
+<div class="air"></div>
+
+<section class="wrap rule">
+  <p class="lab fx">Enquiries</p>
+  <p class="pull fx" style="margin-top:26px">Written, read, answered. Quietly.</p>
+  
+</section>
+
+<footer class="wrap">
+  <div class="fl fx">
+    
+    <span>18+ &nbsp;&middot;&nbsp; Sydney</span>
+    <span>By appointment</span>
+  </div>
+  <p class="legal">The Obsidian Atelier &nbsp;&middot;&nbsp; Separately operated &nbsp;&middot;&nbsp; MMXXVI</p>
+<div class="cisfoot" style="margin:56px 0 0;padding:22px 0 10px;border-top:1px solid rgba(10,10,10,.25);font-family:Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:.14em;line-height:2.1;color:rgba(10,10,10,.72);text-transform:uppercase;"><a href="https://witch.codes" style="display:block;margin:0 0 16px;"><img src="/assets/foot-art.jpg" alt="WITCH.CODES" style="width:100%;max-width:220px;height:auto;display:block;border:1px solid rgba(10,10,10,.22);"></a><a href="https://witch.codes" style="display:block;margin:0 0 16px;"><img src="/assets/foot-art.jpg" alt="WITCH.CODES" style="width:100%;max-width:220px;height:auto;display:block;border:1px solid rgba(10,10,10,.22);"></a>BUTTERFLY KINGDOM NSW PTY LTD TRADING AS WITCHCRAFT AI &middot; ABN 11 691 050 969 &middot; ACN 691 050 969 &middot; G/17 THE SEVEN WAYS ROCKDALE NSW 2216<br><a href="https://witch.codes" style="color:inherit;">WITCH.CODES</a> &middot; <a href="https://witchcraft.business" style="color:inherit;">WITCHCRAFT.BUSINESS</a> &middot; <a href="https://witchcraft.living" style="color:inherit;">WITCHCRAFT.LIVING</a> &middot; <a href="https://witchcraft.homes" style="color:inherit;">WITCHCRAFT.HOMES</a> &middot; <a href="https://witchcraft.expert" style="color:inherit;">WITCHCRAFT.EXPERT</a> &middot; <a href="https://witchcraft.boutique" style="color:inherit;">WITCHCRAFT.BOUTIQUE</a> &middot; <a href="https://witchcraft.delivery" style="color:inherit;">WITCHCRAFT.DELIVERY</a> &middot; <a href="https://witchcraft.pics" style="color:inherit;">WITCHCRAFT.PICS</a> &middot; <a href="https://witchcraft.video" style="color:inherit;">WITCHCRAFT.VIDEO</a><br><a href="mailto:hecate@witch.codes" style="color:inherit;">HECATE@WITCH.CODES</a></div>
+</footer>
+
+<script>
+(function(){
+  var g=document.getElementById('gate');
+  document.getElementById('enter').addEventListener('click',function(){
+    g.parentNode.removeChild(g);
+    try{document.querySelector('h1 span').focus();}catch(e){}
+  });
+  document.getElementById('leave').addEventListener('click',function(){
+    location.href='https://witchcraft.business/';
+  });
+})();
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+    [].forEach.call(document.querySelectorAll('.fx'),function(e){e.classList.add('on');});
+    return;
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        var sibs=[].slice.call(e.target.parentElement.querySelectorAll('.fx'));
+        e.target.style.transitionDelay=(Math.max(sibs.indexOf(e.target),0)*70)+'ms';
+        e.target.classList.add('on'); io.unobserve(e.target);
+      }
+    });
+  },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.fx'),function(e){io.observe(e);});
+})();
+</script>
+</body>
+</html>
